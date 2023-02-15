@@ -121,7 +121,7 @@ function finalWinner(player) {
         location.reload()
 
     }
-    else if (player ==""){
+    else if (player != 'red' && player != 'black'){
         winner.innerText = "It's a Tie";
         location.reload()
     }
