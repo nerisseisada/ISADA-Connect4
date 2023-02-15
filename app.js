@@ -19,7 +19,7 @@ document.querySelectorAll(".column").forEach((e) => {
         eval(`c_${e.id}++`)
 
         if (count <= 6 && pCurrent == pRed) {
-            document.getElementById(`${e.id}-${count}`).style.backgroundColor = pRed
+            document.getElementById(`${e.id}-${count}`).style.backgroundColor = "red"
             
             pCurrent = pblack;
             turn = document.getElementById("turn");
@@ -29,7 +29,7 @@ document.querySelectorAll(".column").forEach((e) => {
         }
         
         else {
-            document.getElementById(`${e.id}-${count}`).style.backgroundColor = pblack
+            document.getElementById(`${e.id}-${count}`).style.backgroundColor = "black"
             
             pCurrent = pRed;
             turn = document.getElementById("turn");
