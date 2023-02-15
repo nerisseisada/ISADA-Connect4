@@ -1,6 +1,6 @@
 //Initialization
 var pRed = "Red";
-var pBlack = "Black";
+var pblack = "Black";
 var pCurrent = pRed;
 
 c_c0 = 0
@@ -121,7 +121,7 @@ function finalWinner(player) {
         location.reload()
 
     }
-    else if (player != 'red' && player != 'black'){
+    else if (player ==""){
         winner.innerText = "It's a Tie";
         location.reload()
     }
