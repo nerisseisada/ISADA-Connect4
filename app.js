@@ -1,6 +1,6 @@
 //Initialization
 var pRed = "Red";
-var pblack = "Black";
+var pBlack = "Black";
 var pCurrent = pRed;
 
 c_c0 = 0
@@ -19,7 +19,7 @@ document.querySelectorAll(".column").forEach((e) => {
         eval(`c_${e.id}++`)
 
         if (count <= 6 && pCurrent == pRed) {
-            document.getElementById(`${e.id}-${count}`).style.backgroundColor = "red"
+            document.getElementById(`${e.id}-${count}`).style.backgroundColor = pRed
             
             pCurrent = pblack;
             turn = document.getElementById("turn");
@@ -29,7 +29,7 @@ document.querySelectorAll(".column").forEach((e) => {
         }
         
         else {
-            document.getElementById(`${e.id}-${count}`).style.backgroundColor = "black"
+            document.getElementById(`${e.id}-${count}`).style.backgroundColor = pblack
             
             pCurrent = pRed;
             turn = document.getElementById("turn");
@@ -121,7 +121,7 @@ function finalWinner(player) {
         location.reload()
 
     }
-    else if (player ==""){
+    else if (player != 'red' && player != 'black'){
         winner.innerText = "It's a Tie";
         location.reload()
     }
